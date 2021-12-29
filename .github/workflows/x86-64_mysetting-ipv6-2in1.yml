@@ -20,7 +20,7 @@ on:
         default: 'false'
 
 env:
-  REPO_URL: https://github.com/openwrt/openwrt
+  REPO_URL:  https://github.com/immortalwrt/immortalwrt
   REPO_BRANCH: openwrt-21.02
   FEEDS_CONF: x86-64_mysetting-ipv6-2in1/feeds.conf.default
   CONFIG_FILE: x86-64_mysetting-ipv6-2in1/.config
