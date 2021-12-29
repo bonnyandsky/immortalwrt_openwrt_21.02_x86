@@ -1,9 +1,5 @@
 [中文](https://p3terx.com/archives/build-openwrt-with-github-actions.html)
 
-./scripts/feeds update helloworld 
-
-./scripts/feeds install -a helloworld
-
 编译步骤：
 
 sudo apt-get update
@@ -14,15 +10,9 @@ sudo apt-get -y install build-essential asciidoc binutils bzip2 gawk gettext git
 
 sudo apt install ca-certificates
 
-git clone https://github.com/coolsnowwolf/lede
+git clone https://github.com/immortalwrt/immortalwrt -b openwrt-21.02 immortalwrt
 
 cd lede
-
-lede\feeds.conf.default添加
-```bash
-src-git helloworld https://github.com/fw876/helloworld
-src-git passwall https://github.com/xiaorouji/openwrt-passwall
-```
 
 ./scripts/feeds update -a
 
