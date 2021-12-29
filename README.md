@@ -12,7 +12,7 @@ sudo apt install ca-certificates
 
 git clone https://github.com/immortalwrt/immortalwrt -b openwrt-21.02 immortalwrt
 
-cd lede
+cd immortalwrt
 
 ./scripts/feeds update -a
 
@@ -30,7 +30,7 @@ make -j1 V=s （-j1 后面是线程数。第一次编译推荐用单线程）即
 
 二次编译：
 
-cd lede
+cd immortalwrt
 
 git pull
 
