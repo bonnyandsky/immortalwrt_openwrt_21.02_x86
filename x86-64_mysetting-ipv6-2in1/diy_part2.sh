@@ -13,6 +13,10 @@
 # Modify default IP
 sed -i 's/192.168.1.1/192.168.0.1/g' package/base-files/files/bin/config_generate
 
+# 删除默认密码
+#sed -i '19s/sed/# sed/g' package/emortal/default-settings/files/99-default-settings
+sed -i "/CYXluq4wUazHjmCDBCqXF/d" package/emortal/default-settings/files/99-default-setting
+
 # 移除重复软件包
 # rm -rf package/lean/luci-app-netdata 原来的是英文
 # rm -rf package/lean/luci-app-wrtbwmon
