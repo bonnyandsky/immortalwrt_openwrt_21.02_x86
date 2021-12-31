@@ -13,7 +13,7 @@
 # Modify default IP
 sed -i 's/192.168.1.1/192.168.0.1/g' package/base-files/files/bin/config_generate
 
-# 删除默认密码 测试下面这条
+# 删除默认密码 下面这条可以
 sed -i '18s/sed/# sed/g' package/emortal/default-settings/files/99-default-settings
 # sed -i "/CYXluq4wUazHjmCDBCqXF/d" package/emortal/default-settings/files/99-default-setting 不起作用
 
