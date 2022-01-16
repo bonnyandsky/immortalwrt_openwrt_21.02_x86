@@ -19,7 +19,7 @@ sed -i '18s/sed/# sed/g' package/emortal/default-settings/files/99-default-setti
 
 # 移除重复软件包
 # rm -rf package/lean/luci-app-netdata 原来的是英文
-# rm -rf package/lean/luci-app-wrtbwmon
+# rm -rf package/lean/luci-app-wrtbwmon master和21.02分支都不显示
 # rm -rf package/lean/luci-theme-argon 所以暂时不知道自带的主题wrtbwmon是否显示正常
 
 # 添加额外软件包，不在根目录要用svn co，然后tree/main替换成trunk
