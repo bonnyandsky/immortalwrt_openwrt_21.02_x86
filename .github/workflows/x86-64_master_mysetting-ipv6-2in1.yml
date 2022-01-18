@@ -32,7 +32,7 @@ env:
   UPLOAD_WETRANSFER: true
   UPLOAD_RELEASE: true
   TZ: Asia/Shanghai
-  FILE_NAME: x86-64_master_mysetting-ipv6-2in1
+  FILE_NAME: immortalwrt_master_x86_mysetting-ipv6-2in1
 
 jobs:
   build:
