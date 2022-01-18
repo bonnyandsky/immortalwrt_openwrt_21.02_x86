@@ -8,7 +8,7 @@
 # Description: Build OpenWrt using GitHub Actions
 # 初始ip:192.168.0.1
 
-name: x86-64_mysetting-ipv6-2in1
+name: x86-64_2102_mysetting-ipv6-2in1
 
 on:
   repository_dispatch:
@@ -21,7 +21,7 @@ on:
 
 env:
   REPO_URL:  https://github.com/immortalwrt/immortalwrt
-  REPO_BRANCH: master
+  REPO_BRANCH: openwrt-21.02
   FEEDS_CONF: x86-64_mysetting-ipv6-2in1/feeds.conf.default
   CONFIG_FILE: x86-64_mysetting-ipv6-2in1/.config
   DIY_P1_SH: x86-64_mysetting-ipv6-2in1/diy_part1.sh
@@ -32,7 +32,7 @@ env:
   UPLOAD_WETRANSFER: true
   UPLOAD_RELEASE: true
   TZ: Asia/Shanghai
-  FILE_NAME: x86-64_mysetting-ipv6-2in1
+  FILE_NAME: x86-64_2102_mysetting-ipv6-2in1
 
 jobs:
   build:
@@ -189,8 +189,8 @@ jobs:
     - name: Delete workflow runs
       uses: GitRML/delete-workflow-runs@main
       with:
-        retain_days: 30
-        keep_minimum_runs: 2
+        retain_days: 90
+        keep_minimum_runs: 10
 
     - name: Remove old Releases
       uses: dev-drprasad/delete-older-releases@v0.2.0
