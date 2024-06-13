@@ -20,19 +20,19 @@ on:
         default: 'false'
 
 env:
-  REPO_URL: https://github.com/coolsnowwolf/lede
+  REPO_URL: https://github.com/immortalwrt/immortalwrt
   REPO_BRANCH: master
-  FEEDS_CONF: x86-64_mysetting-ipv6-2in1_new/feeds.conf.default
-  CONFIG_FILE: x86-64_mysetting-ipv6-2in1_new/.config
-  DIY_P1_SH: x86-64_mysetting-ipv6-2in1_new/diy_part1.sh
-  DIY_P2_SH: x86-64_mysetting-ipv6-2in1_new/diy_part2.sh
+  FEEDS_CONF: immortalwrt_openwrt_x86_new/feeds.conf.default
+  CONFIG_FILE: immortalwrt_openwrt_x86_new/.config
+  DIY_P1_SH: immortalwrt_openwrt_x86_new/diy_part1.sh
+  DIY_P2_SH: immortalwrt_openwrt_x86_new/diy_part2.sh
   UPLOAD_BIN_DIR: false
   UPLOAD_FIRMWARE: true
   UPLOAD_COWTRANSFER: true
   UPLOAD_WETRANSFER: false
   UPLOAD_RELEASE: true
   TZ: Asia/Shanghai
-  FILE_NAME: x86-64_mysetting-ipv6-2in1_new
+  FILE_NAME: immortalwrt_master_x86_mysetting-ipv6-2in1
 
 jobs:
   build:
