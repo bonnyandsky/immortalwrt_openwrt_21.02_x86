@@ -20,7 +20,7 @@ env:
   REPO_URL: https://github.com/immortalwrt/immortalwrt
   REPO_BRANCH: master
   FEEDS_CONF: immortalwrt_openwrt_x86_new/feeds.conf.default
-  CONFIG_FILE: immortalwrt_openwrt_x86_new/.config
+  CONFIG_FILE: immortalwrt_openwrt_x86_new/immortalwrt.config
   DIY_P1_SH: immortalwrt_openwrt_x86_new/diy_part1.sh
   DIY_P2_SH: immortalwrt_openwrt_x86_new/diy_part2.sh
   UPLOAD_BIN_DIR: false
