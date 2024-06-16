@@ -23,21 +23,22 @@ sed -i 's/192.168.1.1/192.168.0.1/g' package/base-files/files/bin/config_generat
 
 # 添加额外软件包，不在根目录要用svn co，然后tree/main替换成trunk
 git clone https://github.com/esirplayground/luci-app-poweroff package/luci-app-poweroff
+git clone https://github.com/sirpdboy/netspeedtest package/netspeedtest
 # svn co https://github.com/sirpdboy/sirpdboy-package/trunk/luci-app-advanced package/luci-app-advanced
 # svn co https://github.com/kiddin9/openwrt-packages/trunk/luci-app-eqos package/luci-app-eqos
 # svn co https://github.com/sirpdboy/sirpdboy-package/trunk/luci-app-netdata package/luci-app-netdata
-# svn co https://github.com/sirpdboy/sirpdboy-package/trunk/luci-app-netspeedtest package/luci-app-netspeedtest
+
 
 # 流量监控
-# svn co https://github.com/sirpdboy/sirpdboy-package/trunk/luci-app-wrtbwmon package/luci-app-wrtbwmon
-# svn co https://github.com/sirpdboy/sirpdboy-package/trunk/wrtbwmon package/wrtbwmon
+svn co https://github.com/sirpdboy/sirpdboy-package/trunk/luci-app-wrtbwmon package/luci-app-wrtbwmon
+svn co https://github.com/sirpdboy/sirpdboy-package/trunk/wrtbwmon package/wrtbwmon
 
 # Themes
 # git clone -b 18.06 https://github.com/jerrykuku/luci-theme-argon.git package/luci-theme-argon
 # git clone https://github.com/jerrykuku/luci-app-argon-config package/luci-app-argon-config
 
 # 修改插件名字
-# sed -i 's/"流量"/"实时流量监测"/g' `grep "流量" -rl ./`
+sed -i 's/"流量"/"实时流量监测"/g' `grep "流量" -rl ./`
 
 ./scripts/feeds update -a
 ./scripts/feeds install -a
